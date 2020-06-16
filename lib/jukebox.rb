@@ -33,16 +33,16 @@ puts "Please enter a command:"
 input=gets.strip
 
 if input == "exit"
-  
+  exit_jukebox
    elsif input == "play" 
    play(songs)
+   run(songs)
   elsif input == "list"
- list(song)
+ list(songs)
+ run(songs)
   elsif input == "help"
   help
+  run(songs)
 end
-run(songs)
-end
- exit_jukebox
 end
 
