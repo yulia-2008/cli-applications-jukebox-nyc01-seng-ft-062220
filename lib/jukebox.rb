@@ -32,8 +32,9 @@ end
 puts "Please enter a command:"  
 input=gets.strip
 
-until input == "exit"
-   if input == "play" 
+if input == "exit"
+  
+   elsif input == "play" 
    play(songs)
   elsif input == "list"
  list(song)
